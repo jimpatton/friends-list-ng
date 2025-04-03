@@ -16,7 +16,6 @@ export class FriendListComponent {
     console.log(this.newFriend);
     this.friends.push(this.newFriend);
   }
-
 }
 
 
