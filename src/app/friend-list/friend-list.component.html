@@ -1,0 +1,5 @@
+<h3>{{title}}</h3>
+<p *ngIf="displayable">This paragraph only displays if displayable == true</p>
+<label>New Friend:</label>
+<input [(ngModel)]="newFriend" type="text">
+<button (click)="addFriend()">Add</button>
