@@ -13,9 +13,20 @@ export class FriendListComponent {
   newFriend: string = ""
 
   addFriend() {
-    console.log(this.newFriend);
     this.friends.push(this.newFriend);
   }
+
+  delFriend(friend: string) {
+    console.log(`Deleted friend: ${friend}`);
+
+  }
+
+
+
+
+
+
+
 }
 
 

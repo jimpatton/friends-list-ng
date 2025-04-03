@@ -4,7 +4,8 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FriendListComponent } from './friend-list/friend-list.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [

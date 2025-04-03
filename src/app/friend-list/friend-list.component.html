@@ -1,8 +1,20 @@
 <h3>{{title}}</h3>
-<!-- <p *ngIf="displayable">This paragraph only displays if displayable == true</p> -->
+<p *ngIf="displayable">This paragraph only displays if displayable == true</p>
 <label>New Friend:</label>
 <input [(ngModel)]="newFriend" type="text">
 <button (click)="addFriend()">Add</button>
-<ul>
+<!-- <ul>
     <li *ngFor="let friend of friends">{{friend}}</li>
-</ul>
+</ul> -->
+<table>
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Action</td>
+        </tr>
+        <tr *ngFor="let friend of friends">
+            <td>{{friends}}</td>
+            <td><button (click)="delFriend(friend)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
